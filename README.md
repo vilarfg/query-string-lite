@@ -1,6 +1,6 @@
 # query-string-lite
 
-[![Build Status](https://travis-ci.com/vilarfg/query-string-lite.svg?&branch=master)](https://travis-ci.com/vilarfg/query-string-lite) [![Coverage Status](https://coveralls.io/repos/github/vilarfg/query-string-lite/badge.svg?branch=master)](https://coveralls.io/github/vilarfg/query-string-lite?branch=master)
+[![Build Status](https://travis-ci.com/vilarfg/query-string-lite.svg?&branch=master)](https://travis-ci.com/vilarfg/query-string-lite) [![Coverage Status](https://coveralls.io/repos/github/vilarfg/query-string-lite/badge.svg?branch=master)](https://coveralls.io/github/vilarfg/query-string-lite?branch=master) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vilarfg/query-string-lite/blob/master/LICENSE) [![Download Size](https://badgen.net/bundlephobia/minzip/query-string-lite)](https://bundlephobia.com/result?p=query-string-lite@0.2.1) [![npm version](https://badgen.net/npm/v/query-string-lite)](https://www.npmjs.com/package/query-string-lite)
 
 ## install
 
@@ -52,6 +52,7 @@ You can read all about ***why*** I decided to write this package over [here](). 
 ## TODO
 
 * [ ] write description
+* [ ] write the blog post about this
 * [ ] write docs
 * [ ] implement typedoc
 * [x] Travis CI

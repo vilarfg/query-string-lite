@@ -1,6 +1,6 @@
 {
   "name": "query-string-lite",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "lightweight query string encoder/decoder",
   "main": "index.js",
   "repository": {
@@ -50,6 +50,7 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage && coveralls < coverage/lcov.info",
+    "prepublish": "tsc && prettier --write index.js",
     "build": "tsc && prettier --write index.js",
     "lint": "tsc --noEmit && eslint './*.ts' --quiet --fix"
   }
