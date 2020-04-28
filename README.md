@@ -20,7 +20,7 @@ const querystring = "?string=question&boolean&string=&string=42"
 
 const query = decode(querystring);
 
-console.log(JSON.stringify(query, "", "  "))
+console.log(JSON.stringify(query))
 //=> '{ boolean: true, string: [ "question", "", "42" ]}'
 
 console.log(encode(query))
@@ -36,7 +36,7 @@ const querystringZH = "?聪明&名字=Fernando&名字=&名字=王"
 
 const queryZH = decode(querystring);
 
-console.log(JSON.stringify(query, "", "  "))
+console.log(JSON.stringify(query))
 //=> '{ 名字: [ "Fernando", "", "王" ], 聪明: true }'
 
 console.log(encode(query))
