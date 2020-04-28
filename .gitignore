@@ -1,0 +1,11 @@
+node_modules
+docs
+coverage
+*.log
+*.d.ts
+!test/global.d.ts
+*.js
+*.map
+jest.*
+!jest.config.js
+!jest.setup.ts
