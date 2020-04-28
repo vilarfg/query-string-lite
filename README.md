@@ -43,9 +43,9 @@ console.log(encode(query))
 //=> '?名字=Fernando&名字=&名字=王&聪明'
 ```
 
-## Rationale
+<!-- ## Rationale
 
-You can read all about ***why*** I decided to write this package over [here]().
+You can read all about ***why*** I decided to write this package over [here](). -->
 
 <!-- 
 
