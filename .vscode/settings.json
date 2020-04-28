@@ -1,0 +1,31 @@
+{
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "index.{js,js.map,d.ts,d.ts.map}": true,
+    "coverage": true,
+    "*.log": true,
+    "node_modules": true
+  },
+  "licenser.author": "Fernando G. Vilar",
+  "licenser.license": "MIT",
+  "jest.runAllTestsFirst": false,
+  "jest.autoEnable": false,
+  "editor.formatOnSave": true
+}
