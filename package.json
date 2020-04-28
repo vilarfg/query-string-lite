@@ -1,6 +1,6 @@
 {
   "name": "query-string-lite",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "lightweight query string encoder/decoder",
   "main": "index.js",
   "repository": {
