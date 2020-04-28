@@ -50,6 +50,10 @@ describe("exported `decode`", () => {
       },
     ],
     [
+      "?a%3Da=a&%3D=a=a&a%3D==&a%3D=",
+      { "a=a": ["a"], "=": ["a=a"], "a=": ["=", ""] },
+    ],
+    [
       "?string=question&boolean&string=&string=42",
       { boolean: true, string: ["question", "", "42"] },
     ],
@@ -110,6 +114,10 @@ describe("exported `encode`", () => {
         cursor: ["[docID", "(docID", "docID)", "docID]"],
         limit: ["20"],
       },
+    ],
+    [
+      "?%3D=a=a&a%3D==&a%3D=&a%3Da=a",
+      { "a=a": ["a"], "=": ["a=a"], "a=": ["=", ""] },
     ],
     [
       "?boolean&string=question&string=&string=42",

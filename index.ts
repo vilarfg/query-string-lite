@@ -51,11 +51,15 @@ export function encode(query: Query): string {
   for (const k in query) {
     const values = query[k];
     if (values) {
-      if (values === true) parts.push(k);
+      if (values === true) parts.push(k.replace(/=/g, "%3D"));
       else if (values.length) {
+        const safeKey = k.replace(/=/g, "%3D");
         let qsValue = "";
         for (let i = 0; i < values.length; i++)
-          qsValue += (i ? "&" : "") + k + "=" + values[i].replace(/\&/g, "%26");
+          qsValue = `${qsValue}${i ? "&" : ""}${safeKey}=${values[i].replace(
+            /&/g,
+            "%26",
+          )}`;
         parts.push(qsValue);
       }
     }
