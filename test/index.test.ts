@@ -50,6 +50,10 @@ describe("exported `decode`", () => {
       },
     ],
     [
+      "?cursor=[user/abc123/a.a/abc13,user/abc123/a.b/abc13)",
+      { cursor: ["[user/abc123/a.a/abc13,user/abc123/a.b/abc13)"] },
+    ],
+    [
       "?a%3Da=a&%3D=a=a&a%3D==&a%3D=",
       { "a=a": ["a"], "=": ["a=a"], "a=": ["=", ""] },
     ],
@@ -114,6 +118,10 @@ describe("exported `encode`", () => {
         cursor: ["[docID", "(docID", "docID)", "docID]"],
         limit: ["20"],
       },
+    ],
+    [
+      "?cursor=[user/abc123/a.a/abc13,user/abc123/a.b/abc13)",
+      { cursor: ["[user/abc123/a.a/abc13,user/abc123/a.b/abc13)"] },
     ],
     [
       "?%3D=a=a&a%3D==&a%3D=&a%3Da=a",
