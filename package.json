@@ -1,8 +1,9 @@
 {
   "name": "query-string-lite",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "lightweight query string encoder/decoder",
-  "main": "index.js",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/module/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vilarfg/query-string-lite.git"
@@ -50,8 +51,9 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage && coveralls < coverage/lcov.info",
-    "prepublish": "tsc && prettier --write index.js",
-    "build": "tsc && prettier --write index.js",
+    "prepublishold": "tsc && prettier --write index.js",
+    "prepublish": "npm run build",
+    "build": "tsc && prettier --write dist/module/*.js && tsc --module commonjs --outDir dist/commonjs && prettier --write dist/commonjs/*.js",
     "lint": "tsc --noEmit && eslint './*.ts' --quiet --fix"
   }
 }
